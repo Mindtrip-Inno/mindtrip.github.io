@@ -13,7 +13,9 @@
     <script>
       function pressed() {
         var text = document.getElementById("input").value;
-        ////
+        var output = document.getElementById("output");
+        output.innerHTML = text;
+
         if (text === "red") {
           document.getElementById("header").style.color = "red";
         } else {

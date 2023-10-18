@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <script>
+      function findInArray(arr, value) {
+        for (let element of arr) {
+          if (element === value) {
+            console.log(element);
+            return true;
+          }
+          console.log(element);
+        }
+        return false;
+      }
+      var arr = "hello";
+
+      document.write(findInArray(arr, "o"));
+    </script>
+  </body>
+</html>
