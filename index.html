@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<link rel="icon" href="favicon-32x32.png" />
+
+<html>
+  <body>
+    <h1 id="header1">Write "red" OR ....</h1>
+    <h1 id="header">Hello</h1>
+
+    <input type="text" id="input" />
+    <button id="button" onclick="pressed()">Click</button>
+
+    <script>
+      function pressed() {
+        var text = document.getElementById("input").value;
+        ////
+        if (text === "red") {
+          document.getElementById("header").style.color = "red";
+        } else {
+          document.getElementById("header").innerHTML = "Fuck Off";
+        }
+      }
+    </script>
+  </body>
+</html>
